@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <th:block th:replace="fragments :: head"></th:block>
     <title>Home</title>
 </head>
 <body>
 <h1>“Best of the year by <span th:text="${name}"></span>"</h1>
+<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>
