@@ -2,10 +2,12 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Best Songs</title>
+    <title>Best Movie</title>
 </head>
 <body>
-<h1>Best Songs</h1>
-<p th:text="${songs}"></p>
+<h1>Best Movies</h1>
+<ul>
+    <li th:each="movie : ${movieList}" th:text="${movie.title}"></li>
+</ul>
 </body>
 </html>
